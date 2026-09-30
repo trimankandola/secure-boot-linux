@@ -27,7 +27,7 @@ flowchart LR
 
 ## Roadmap
 
-- [ ] L1: OP-TEE QEMU v8 reference build boots end to end; each stage labeled in the boot log
+- [X] L1: OP-TEE QEMU v8 reference build boots end to end; each stage labeled in the boot log
 - [ ] L2: Yocto (poky + meta-arm, `qemuarm64-secureboot`) with a custom layer, a C++ app recipe with gtest, and a kernel config bbappend
 - [ ] L3: signed FIT images enforced by U-Boot; dm-verity read-only rootfs; tampered-image rejection demo
 - [ ] L4: fscrypt `/data` partition; OP-TEE hello-world Trusted Application; cve-check report and SBOM
