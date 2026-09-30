@@ -1,0 +1,68 @@
+D/TC:? 0 tee_ta_invoke_command:831 Error: ffff000a of 4
+D/TC:? 0 tee_ta_close_session:513 id 1
+D/TC:? 0 tee_ta_close_session:527 Destroy session
+D/TC:0   periodic_callback:136 seconds 16 millis 94 count 16
+D/TC:0   periodic_callback:136 seconds 17 millis 94 count 17
+D/TC:? 0 tee_ta_close_session:513 id 2
+D/TC:? 0 tee_ta_close_session:527 Destroy session
+D/TC:0   periodic_callback:136 seconds 18 millis 112 count 18
+D/TC:0   periodic_callback:136 seconds 19 millis 106 count 19
+D/TC:0   periodic_callback:136 seconds 20 millis 104 count 20
+D/TC:0   periodic_callback:136 seconds 21 millis 94 count 21
+D/TC:0   periodic_callback:140 Disabling periodic callout
+D/TC:? 0 tee_ta_init_pseudo_ta_session:303 Lookup pseudo TA 8aaaf200-2450-11e4-abe2-0002a5d5c51b
+D/TC:? 0 ldelf_load_ldelf:110 ldelf load address 0x40007000
+D/LD:  ldelf:159 Loading TS 8aaaf200-2450-11e4-abe2-0002a5d5c51b
+D/TC:? 0 ldelf_syscall_open_bin:163 Lookup user TA ELF 8aaaf200-2450-11e4-abe2-0002a5d5c51b (early TA)
+D/TC:? 0 ldelf_syscall_open_bin:167 res=0xffff0008
+D/TC:? 0 ldelf_syscall_open_bin:163 Lookup user TA ELF 8aaaf200-2450-11e4-abe2-0002a5d5c51b (Secure Storage TA)
+D/TC:? 0 ldelf_syscall_open_bin:167 res=0xffff0008
+D/TC:? 0 ldelf_syscall_open_bin:163 Lookup user TA ELF 8aaaf200-2450-11e4-abe2-0002a5d5c51b (REE)
+D/TC:? 0 ldelf_syscall_open_bin:167 res=0
+D/LD:  ldelf:207 ELF (8aaaf200-2450-11e4-abe2-0002a5d5c51b) at 0x40049000
+D/TA:  TA_CreateEntryPoint:18 has been called
+D/TA:  __GP11_TA_OpenSessionEntryPoint:47 has been called
+I/TA: Hello World!
+D/TA:  inc_value:78 has been called
+I/TA: Got value: 42 from NW
+I/TA: Increase value to: 43
+D/TC:? 0 tee_ta_close_session:513 id 4
+D/TC:? 0 tee_ta_close_session:527 Destroy session
+I/TA: Goodbye!
+D/TA:  TA_DestroyEntryPoint:29 has been called
+D/TC:? 0 destroy_context:326 Destroy TA ctx (0x3737e750)
+D/TC:? 0 tee_ta_init_pseudo_ta_session:303 Lookup pseudo TA d96a5b40-c3e5-21e3-8794-1002a5d5c61b
+D/TC:? 0 tee_ta_init_pseudo_ta_session:315 Open invoke_tests.pta
+D/TC:? 0 tee_ta_init_pseudo_ta_session:330 invoke_tests.pta : d96a5b40-c3e5-21e3-8794-1002a5d5c61b
+D/TC:? 0 create_ta:381 create entry point for pseudo TA "invoke_tests.pta"
+D/TC:? 0 open_session:394 open entry point for pseudo ta "invoke_tests.pta"
+D/TC:? 0 tee_ta_invoke_command:831 Error: ffff000a of 4
+D/TC:? 0 tee_ta_close_session:513 id 4
+D/TC:? 0 tee_ta_close_session:527 Destroy session
+D/TC:? 0 close_session:400 close entry point for pseudo ta "invoke_tests.pta"
+D/TC:? 0 destroy_ta:387 destroy entry point for pseudo ta "invoke_tests.pta"
+D/TC:? 0 tee_ta_init_pseudo_ta_session:303 Lookup pseudo TA fd02c9da-306c-48c7-a49c-bbd827ae86ee
+D/TC:? 0 ldelf_load_ldelf:110 ldelf load address 0x40007000
+D/LD:  ldelf:159 Loading TS fd02c9da-306c-48c7-a49c-bbd827ae86ee
+D/TC:? 0 ldelf_syscall_open_bin:163 Lookup user TA ELF fd02c9da-306c-48c7-a49c-bbd827ae86ee (early TA)
+D/TC:? 0 ldelf_syscall_open_bin:167 res=0xffff0008
+D/TC:? 0 ldelf_syscall_open_bin:163 Lookup user TA ELF fd02c9da-306c-48c7-a49c-bbd827ae86ee (Secure Storage TA)
+D/TC:? 0 ldelf_syscall_open_bin:167 res=0xffff0008
+D/TC:? 0 ldelf_syscall_open_bin:163 Lookup user TA ELF fd02c9da-306c-48c7-a49c-bbd827ae86ee (REE)
+D/TC:? 0 ldelf_syscall_open_bin:167 res=0
+D/LD:  ldelf:207 ELF (fd02c9da-306c-48c7-a49c-bbd827ae86ee) at 0x40035000
+D/TC:? 0 tee_ta_close_session:513 id 4
+D/TC:? 0 tee_ta_close_session:527 Destroy session
+D/TC:0   test_wd_callback:49 WD call_count 60, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 120, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 180, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 240, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 300, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 360, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 420, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 480, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 540, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 600, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 660, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 720, timeout_count 0
+D/TC:0   test_wd_callback:49 WD call_count 780, timeout_count 0

@@ -1,0 +1,49 @@
+# optee_example_hello_world
+Invoking TA to increment 42
+TA incremented value to 43
+# xtest 1001
+Test ID: 1001
+Run test suite with level=0
+
+TEE test application started over default TEE instance
+######################################################
+#
+# regression+pkcs11
+#
+######################################################
+ 
+* regression_1001 Core self tests
+o regression_1001.1 Core self tests
+  regression_1001.1 OK
+o regression_1001.2 Core dt_driver self tests
+  regression_1001.2 OK
+o regression_1001.3 Core transfer list self tests
+Transfer List tests not supported, skipping
+  regression_1001.3 OK
+  regression_1001 OK
+ 
+* pkcs11_1001 PKCS11: List PKCS#11 slots and get information from
+o pkcs11_1001.1 Test C_GetFunctionList()
+  pkcs11_1001.1 OK
+o pkcs11_1001.2 Test C_GetInfo()
+  pkcs11_1001.2 OK
+o pkcs11_1001.3 Test C_GetSlotList()
+  pkcs11_1001.3 OK
+o pkcs11_1001.4 Test C_Get{Slot|Token}Info()
+  pkcs11_1001.4 OK
+o pkcs11_1001.5 Test C_GetMechanism{List|Info}()
+  pkcs11_1001.5 OK
+o pkcs11_1001.6 Test C_GetMechanismList() with larger result buffer
+  pkcs11_1001.6 OK
+o pkcs11_1001.7 Test C_Get*Info() with invalid reference
+  pkcs11_1001.7 OK
+  pkcs11_1001 OK
++-----------------------------------------------------
+Result of testsuite regression+pkcs11 filtered by "1001":
+regression_1001 OK
+pkcs11_1001 OK
++-----------------------------------------------------
+624 subtests of which 0 failed
+2 test cases of which 0 failed
+146 test cases were skipped
+TEE test application done!
