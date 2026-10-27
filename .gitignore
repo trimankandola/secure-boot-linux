@@ -2,3 +2,4 @@ build/
 *.img
 *.bin
 *.log.tmp
+keys/
